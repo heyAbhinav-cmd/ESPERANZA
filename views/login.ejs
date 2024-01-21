@@ -1,0 +1,125 @@
+<!--This file asks user to login-->
+
+<style>
+  /* Custom styles */
+  body {
+    background-color: #ed7bda;
+    font-family: Arial, sans-serif;
+    background: url("img/gallery/gallery-8.jpg") top center;
+    background-size: cover;
+    
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    align-self: center;
+  }
+
+  h1 {
+    text-align: justify;
+    color: #c75e5e;
+    margin-bottom: 30px;
+  }
+
+  .card {
+    box-shadow: 0 0 10px rgba(222, 44, 44, 0.1);
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #e7cafe;
+    align-self: center;
+    
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #80bdff;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b94af5;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+  }
+
+  .btn:hover {
+    background-color: #500b6d50;
+  }
+
+  h1{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #ffffffb7;
+  }
+  a {
+    color: #ad47e9;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<div class="container mt-5">
+  
+
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body">
+
+          
+          <form action="/login" method="POST">
+            <a href="home1.ejs" class="logo me-auto"><img src="img/hero-bg1.jpg" alt="" class="img-fluid"
+              style="width: 40rem; height:5rem"></a>
+            
+            <div class="form-group">
+              <label >username</label>
+              <input type="text" class="form-control" name="username">
+            </div>
+            <div class="form-group">
+              <label >Password</label>
+              <input type="password" class="form-control" name="password">
+            </div>
+            <button type="submit" class="btn btn-dark">Login</button>
+            <br/>
+            <a href="/register">Register the user</a>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
